@@ -1,4 +1,4 @@
-# Manualist is the popular way to create simple documentation
+## Manualist is the popular way to create simple documentation
 > Manualist is an intuitive and easy-to-use tool. Just create a fork to start documenting your software in a simple way, adding Markdown files to the "public/docs" directory. These files are automatically loaded into a visual interface, allowing fluid navigation between pages. Additionally, you can use HTML to create links from "docs/" and thus the name of the markdown file, having a dynamic route, customize the documentation style and much more.
 
 ---
