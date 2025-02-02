@@ -23,12 +23,18 @@
       </a>
     </div>
 
-    <!-- Nova div para outras informações -->
     <div class="extra-content">
       <h2>📌 Customization</h2>
       <ul>
         <li>🚀 Customize this template to make your documentation your own, change the content, style and add markdown files to "public/docs" to have your dynamic route starting from "docs".</li>
       </ul>
+      
+      <div class="image-container">
+        <p>In the project, <b>add the markdown file to "public/docs"</b> and its content following the file syntax. All tags in the file will be displayed on screen.</p>
+        <img src="/usageExample.png" alt="Usage example with code">
+        <p>In your project's URL, regardless of the domain, follow the path "docs" and the same name as the markdown file that I added previously, <b>for example in the image "/docs/example"</b>, it is important to note that the ".md" extension is not necessary "</p>
+        <img src="/usageExampleUrl.png" alt="Usage example with url">
+      </div>
     </div>
   </div>
 </template>
@@ -114,7 +120,6 @@ p {
   background-color: white;
 }
 
-/* Nova seção de informações adicionais */
 .extra-content {
   margin-top: 40px;
   padding: 20px;
@@ -124,28 +129,23 @@ p {
   text-align: left;
 }
 
-.extra-content h2 {
-  font-size: 1.5rem;
-  color: #333;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.extra-content p {
-  font-size: 1rem;
-  color: #555;
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.extra-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.extra-content ul li {
-  padding: 5px 0;
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Tema escuro */
 body.dark-mode {
   background-color: #121212;
   color: white;
@@ -183,5 +183,10 @@ body.dark-mode .extra-content h2 {
 body.dark-mode .extra-content p,
 body.dark-mode .extra-content ul li {
   color: #ccc;
+}
+
+/* Ajustes de imagem no modo escuro */
+body.dark-mode .image-container img {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
 }
 </style>
